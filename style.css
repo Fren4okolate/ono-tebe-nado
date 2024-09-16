@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------ Header ------------------------------------------- */
+.header {
+    display: flex;
+    /* Используем Flexbox */
+    /* Центрируем по горизонтали */
+    align-items: center;
+    height: 105px;
+    /* Центрируем по вертикали */
+    margin: 92px 24px 96px 24px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 93px;
+}
+
+/* ------------------- МЕНЮ ------------------------ */
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 390px;
+}
+
+.logo {
+    display: flex;
+    width: 130px;
+    height: 105px;
+    align-items: center;
+    margin: auto;
+
+    /* Отступы для логотипа */
+}
+
+.contacts {
+    margin-left: auto;
+   
+}
+
+/* ------------------- ТЕКСТ В МЕНЮ ------------------------ */
+.menu li {
+    margin: 0 12px;
+    /* Отступы между пунктами меню */
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    
+}
+
+.menu-text-ather {
+    display: flex;
+    text-decoration: underline;
+    list-style-type: circle;
+}
+
+.menu-text-main {
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Убираем синий цвет, наследуем цвет от родителя */
+    
+}
+
+.contacts a {
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Убираем синий цвет, наследуем цвет от родителя */
+}
+.addres {
+    text-decoration: underline;
+}
+/* ------------------------------------------ Main ------------------------------------------- */
+
+
+
+.title p {
+    font-family: Raleway, sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase; /* Преобразует текст в заглавные буквы */
+    color: #fff
+}
+main {
+    height: 757px;
+    width: 100%;
+    position: relative;
+}
+.cover{
+    height: 100%;
+    width: 100%;
+    filter: brightness(60%);
+}
+.title {
+    
+    position: absolute; /* Позволяет расположить заголовок поверх изображения */
+    display: flex; /* Использует flexbox для горизонтального выравнивания */
+    color: white; /* Цвет текста для лучшей видимости */
+    z-index: 10; /* Убедитесь, что заголовок выше изображения */
+}
+
+.title-they {
+    margin-top: 165px; 
+    margin-left: 0px; 
+    width: 316px;
+    max-width: 100%; /* Это поможет адаптировать ширину при изменении размера экрана */
+
+}
+
+.title-you {
+    margin-top: 300px; /* Устанавливает отступ сверху */
+    margin-left: -56px; 
+}
+
+.title-need {
+    margin-top: 420px; /* Устанавливает отступ сверху */
+    margin-left: -56px; 
+}
+.overley {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase; /* Преобразует текст в заглавные буквы */
+    position: absolute; /* Positions the overlay over the image */
+    margin-top: 667px; /* Устанавливает отступ сверху */
+    margin-left: 78px; 
+    text-decoration: none;
+    color: white; /* Sets the text color for better visibility */
+    z-index: 10; /* Ensures the overlay is above the image */
+}
+
+button {
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    line-height: 25.83px;
+    margin-top: 655px; /* Устанавливает отступ сверху */
+    margin-left: 794px; 
+    width: 256px;
+    height: 51px;
+    position: absolute; /* Позиционирует кнопку поверх изображения */
+    z-index: 10; /* Обеспечивает, что кнопка выше изображения */
+    background-color: transparent; /* Делаем фон кнопки прозрачным */
+    color: white; /* Цвет текста кнопки */
+    border: 1px solid white; /* Белая обводка */
+    cursor: pointer; /* Изменяет курсор при наведении */
+    font-size: 22px; /* Размер шрифта (по желанию) */
+    text-transform: uppercase; /* Делаем текст заглавными буквами */
+
+}

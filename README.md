@@ -11,7 +11,7 @@ https://github.com/Fren4okolate/ono-tebe-nado/
 
 ### Скриншот
 
-![](screenshot.png)
+![](скриншот.png)
 
 ### Макет
 

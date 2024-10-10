@@ -1,1 +1,376 @@
-/* место для вашего кода */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------------------ Header ------------------------------------------- */
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1.51fr 2fr 1.5fr;
+    align-items: center;
+    padding: 92px 51px 89px;
+}
+
+.header-list {
+    display: flex;
+    gap: 32px;
+}
+/* ---------------------------- links ------------------------------- */
+.header_links-list-item {
+    list-style: circle;
+}
+
+.main_links {
+    list-style: none;
+}
+
+.header_link {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.active_link {
+    text-decoration: none;
+}
+/* ---------------------------- logo ------------------------------- */
+.header_logo {
+    display: block;
+    justify-self: center;
+    align-self: center;
+    width: 140px;
+}
+
+.header_logo-image {
+    width: 100%;
+}
+/* ---------------------------- address ------------------------------- */
+
+.address {
+    font-style: inherit;
+}
+
+.header_address {
+    justify-self: end;
+    font-style: inherit;
+}
+
+.address_item {
+    display: block;
+    font-size: 18px;
+    line-height: 1.35;
+    text-underline-position: under;
+}
+
+.address-text {
+    font-size: 18px;
+    line-height: 1.35;
+}
+/* ------------------------------------------ Main ------------------------------------------- */
+
+ main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Добавлено для позиционирования дочерних элементов */
+ }
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    gap: 183px;
+  } */
+
+.cover {
+    position: absolute; /* Позволяет расположить элемент поверх других */
+    height: 100%;
+    width: 100%;
+    filter: brightness(60%);
+}
+
+.title {
+    width: 1000px;
+    height: 355px;
+    display: flex;
+    flex-direction: column; /* Позволяет располагать элементы в колонку */
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10;
+    
+
+}
+
+.title-they {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify; /* Stretches the text across the div */
+    width: 316px;
+    align-self: flex-start;  
+    margin-left: 0; 
+    /* Убираем сдвиг, чтобы расположить в верхнем левом углу */
+}
+
+.title-you {
+    width: 369px;
+    align-self: center; 
+}
+
+.title-need {
+    width: 369px;
+    align-self: flex-end; 
+    margin-right: 0; 
+    /* Убираем сдвиг, чтобы расположить в нижнем правом углу */
+}
+
+.title p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Raleway, sans-serif;
+    /* letter-spacing: 1; */
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase; /* Преобразует текст в заглавные буквы */
+    color: #fff;
+}
+.letter-spacing {
+    letter-spacing: 60px;
+}
+.remove-spacing{
+    letter-spacing: normal;
+}
+
+
+section {
+    width: 1100px;
+    height: 757px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    line-height: 25.83px;
+    margin-top: 655px; /* Устанавливает отступ сверху */
+    margin-left: 794px; 
+    width: 256px;
+    height: 51px;
+    position: absolute; /* Позиционирует кнопку поверх изображения */
+    z-index: 10; /* Обеспечивает, что кнопка выше изображения */
+    background-color: transparent; /* Делаем фон кнопки прозрачным */
+    color: white; /* Цвет текста кнопки */
+    border: 1px solid white; /* Белая обводка */
+    cursor: pointer; /* Изменяет курсор при наведении */
+    font-size: 22px; /* Размер шрифта (по желанию) */
+    text-transform: uppercase; /* Делаем текст заглавными буквами */
+
+}
+
+
+/* ------------------------------------------ LOTS ------------------------------------------- */
+.overley {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase; /* Преобразует текст в заглавные буквы */
+    position: absolute; /* Positions the overlay over the image */
+    margin-top: 667px; /* Устанавливает отступ сверху */
+    margin-left: 78px; 
+    text-decoration: none;
+    color: white; 
+    z-index: 10; 
+}
+
+section_lots {
+    height: 692px;
+    width: 100%;
+}
+
+.lots-title{
+    margin-top: 27px;
+}
+.lots-title p{
+    
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    text-align: left;
+    text-transform: uppercase; 
+}
+
+.lots_card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    list-style: none;
+  }
+  
+  .lost_card-list-item {
+    height: 100%;
+  }
+  
+  .card-link {
+    display: block;
+    height: 100%;
+  }
+
+.lot1 {
+    background-image: url(../images/card-lot-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lot2 {
+    background-image: url(../images/card-lot-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    width: auto;
+    height: 100%;
+    padding: 50px 40px;
+    background-position: center;
+    
+}
+
+.lot3 {
+    background-image: url(../images/card-lot-03.jpg);     
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heder_text {
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.bottom_text{
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.60;
+    background-color: #000000;
+}
+
+.lots_look-more{
+    display: block;
+    margin: 30px 0 0 40px;
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    width: fit-content;
+}
+
+/* ------------------------------------------ ABOUT ------------------------------------------- */
+section_about {
+    margin-top: 148px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+    padding: 0 50px;
+}
+
+.about{
+    justify-self: center;
+}
+
+.about_text{
+    grid-column: 2/4;
+}
+
+.about_logo_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.about_title{
+    padding: 100px 0 104px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.about_text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about_text p {
+    font-size: 20px;
+    line-height: normal;
+}
+    
+/* ------------------------------------------ FOOTER ------------------------------------------- */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 180px 50px 80px;
+  }
+  
+  .footer_social-icon {
+    width: auto;
+    height: 48px;
+  }
+  
+  .footer_menu-list {
+    text-align: center;
+    list-style: none;
+  }
+  
+  .footer_menu-link {
+    font-size: 18px;
+    line-height: normal;
+    text-underline-position: under;
+  }
+  
+  .footer_menu-link_active {
+    text-decoration: none;
+  }
+  
+  .footer_social-list {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+  }

@@ -15,7 +15,7 @@ https://github.com/Fren4okolate/ono-tebe-nado/
 
 ### Макет
 
-- Макет задания: [Figma]([https://www.figma.com/file/j0GR1cSFoZbUnNWNvpDapI]
+- Макет задания: [Figma](https://www.figma.com/design/8KwhMpv8qnDocX4NVFQBpn/Оно-тебе-надо?node-id=1-2&node-type=frame&t=rETV8TW2Pmmdc1hG-0)
 
 ### Ссылки
 

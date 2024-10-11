@@ -22,6 +22,7 @@
     display: flex;
     gap: 32px;
 }
+
 /* ---------------------------- links ------------------------------- */
 .header_links-list-item {
     list-style: circle;
@@ -39,6 +40,7 @@
 .active_link {
     text-decoration: none;
 }
+
 /* ---------------------------- logo ------------------------------- */
 .header_logo {
     display: block;
@@ -50,6 +52,7 @@
 .header_logo-image {
     width: 100%;
 }
+
 /* ---------------------------- address ------------------------------- */
 
 .address {
@@ -72,111 +75,94 @@
     font-size: 18px;
     line-height: 1.35;
 }
+
 /* ------------------------------------------ Main ------------------------------------------- */
 
- main {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Добавлено для позиционирования дочерних элементов */
- }
+.cover {
+    position: relative;
+    padding: 165px 50px 50px 50px;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-/* main {
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.60;
+    background-color: #000000;
+}
+/* -------------------------------- text-cover ---------------------------------- */
+.cover_title {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 183px;
-  } */
-
-.cover {
-    position: absolute; /* Позволяет расположить элемент поверх других */
-    height: 100%;
-    width: 100%;
-    filter: brightness(60%);
-}
-
-.title {
-    width: 1000px;
-    height: 355px;
-    display: flex;
-    flex-direction: column; /* Позволяет располагать элементы в колонку */
-    justify-content: space-between; /* Распределяет пространство между элементами */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 10;
-    
-
-}
-
-.title-they {
-    display: flex;
-    justify-content: space-between;
-    text-align: justify; /* Stretches the text across the div */
-    width: 316px;
-    align-self: flex-start;  
-    margin-left: 0; 
-    /* Убираем сдвиг, чтобы расположить в верхнем левом углу */
-}
-
-.title-you {
-    width: 369px;
-    align-self: center; 
-}
-
-.title-need {
-    width: 369px;
-    align-self: flex-end; 
-    margin-right: 0; 
-    /* Убираем сдвиг, чтобы расположить в нижнем правом углу */
-}
-
-.title p {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-family: Raleway, sans-serif;
-    /* letter-spacing: 1; */
+    gap: 20px;
+    color: #FFF;
+    font-weight: bold;
     font-size: 100px;
-    font-weight: 700;
-    text-transform: uppercase; /* Преобразует текст в заглавные буквы */
-    color: #fff;
+    line-height: 1.15;
+    letter-spacing: 30px;
+    text-transform: uppercase;
 }
-.letter-spacing {
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_center {
+    line-height: 1;
+    text-align: center;
+}
+
+.aligned-text_right {
+    line-height: 1;
+    text-align: right;
+}
+
+.letter-spacing-extended {
     letter-spacing: 60px;
 }
-.remove-spacing{
+
+.remove-spacing {
     letter-spacing: normal;
 }
 
-
-section {
-    width: 1100px;
-    height: 757px;
-    justify-content: center;
+/* -------------------------------- description ---------------------------------- */
+.cover_description {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
+    gap: 78px;
+    padding: 136px 0 0;
 }
 
-button {
-    font-family: Raleway, sans-serif;
-    font-weight: 500;
-    line-height: 25.83px;
-    margin-top: 655px; /* Устанавливает отступ сверху */
-    margin-left: 794px; 
-    width: 256px;
-    height: 51px;
-    position: absolute; /* Позиционирует кнопку поверх изображения */
-    z-index: 10; /* Обеспечивает, что кнопка выше изображения */
-    background-color: transparent; /* Делаем фон кнопки прозрачным */
-    color: white; /* Цвет текста кнопки */
-    border: 1px solid white; /* Белая обводка */
-    cursor: pointer; /* Изменяет курсор при наведении */
-    font-size: 22px; /* Размер шрифта (по желанию) */
-    text-transform: uppercase; /* Делаем текст заглавными буквами */
-
+.cover_description-text {
+    color: #FFF;
+    font-size: 22px;
+    line-height: 1.27;
+    text-transform: uppercase;
+    word-spacing: 18px;
+}
+/* -------------------------------- button ---------------------------------- */
+.bet-button {
+    border: 1px #FFF solid;
+    padding: 14px 32px;
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 
@@ -186,30 +172,27 @@ button {
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    text-transform: uppercase; /* Преобразует текст в заглавные буквы */
-    position: absolute; /* Positions the overlay over the image */
-    margin-top: 667px; /* Устанавливает отступ сверху */
-    margin-left: 78px; 
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 667px;
+    margin-left: 78px;
     text-decoration: none;
-    color: white; 
-    z-index: 10; 
+    color: white;
+    z-index: 10;
 }
 
-section_lots {
-    height: 692px;
-    width: 100%;
+
+.lots {
+    margin-top: 179px;
+    padding: 0 50px;
 }
 
-.lots-title{
-    margin-top: 27px;
-}
-.lots-title p{
-    
+.lots-title {
+    padding: 0 0 30px 40px;
+    font-weight: bold;
     font-size: 40px;
-    font-weight: 700;
-    line-height: 47px;
-    text-align: left;
-    text-transform: uppercase; 
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .lots_card-list {
@@ -217,27 +200,24 @@ section_lots {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 25px;
     list-style: none;
-  }
-  
-  .lost_card-list-item {
-    height: 100%;
-  }
-  
-  .card-link {
-    display: block;
-    height: 100%;
-  }
-
-.lot1 {
-    background-image: url(../images/card-lot-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.lot2 {
+.lost_card-list-item {
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.card-link {
+    display: block;
+    height: 100%;
+}
+
+.lot_first {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.lot_second {
     background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .card {
@@ -250,13 +230,12 @@ section_lots {
     height: 100%;
     padding: 50px 40px;
     background-position: center;
-    
-}
-
-.lot3 {
-    background-image: url(../images/card-lot-03.jpg);     
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.lot_third {
+    background-image: url(../images/card-lot-03.jpg);
 }
 
 .heder_text {
@@ -269,14 +248,16 @@ section_lots {
     text-decoration-line: underline;
     text-transform: uppercase;
 }
-.bottom_text{
+
+.bottom_text {
     position: relative;
     z-index: 1;
     color: #FFF;
     font-size: 20px;
     line-height: 1.2;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -287,9 +268,9 @@ section_lots {
     background-color: #000000;
 }
 
-.lots_look-more{
+.lots_look-more {
     display: block;
-    margin: 30px 0 0 40px;
+    margin: 0 0 0 40px;
     font-size: 20px;
     text-decoration-line: underline;
     text-underline-position: under;
@@ -297,7 +278,7 @@ section_lots {
 }
 
 /* ------------------------------------------ ABOUT ------------------------------------------- */
-section_about {
+.about {
     margin-top: 148px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -305,15 +286,15 @@ section_about {
     padding: 0 50px;
 }
 
-.about{
+.about_column {
     justify-self: center;
 }
 
-.about_text{
+.about_text {
     grid-column: 2/4;
 }
 
-.about_logo_image{
+.about_logo_image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,7 +304,7 @@ section_about {
     background-color: #000000;
 }
 
-.about_title{
+.about_title {
     padding: 100px 0 104px;
     font-weight: bold;
     font-size: 40px;
@@ -331,7 +312,7 @@ section_about {
     text-transform: uppercase;
 }
 
-.about_text{
+.about_text {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -341,36 +322,36 @@ section_about {
     font-size: 20px;
     line-height: normal;
 }
-    
+
 /* ------------------------------------------ FOOTER ------------------------------------------- */
 .footer {
     display: flex;
     justify-content: space-between;
     padding: 180px 50px 80px;
-  }
-  
-  .footer_social-icon {
+}
+
+.footer_social-icon {
     width: auto;
     height: 48px;
-  }
-  
-  .footer_menu-list {
+}
+
+.footer_menu-list {
     text-align: center;
     list-style: none;
-  }
-  
-  .footer_menu-link {
+}
+
+.footer_menu-link {
     font-size: 18px;
     line-height: normal;
     text-underline-position: under;
-  }
-  
-  .footer_menu-link_active {
+}
+
+.footer_menu-link_active {
     text-decoration: none;
-  }
-  
-  .footer_social-list {
+}
+
+.footer_social-list {
     display: flex;
     gap: 48px;
     list-style: none;
-  }
+}

@@ -220,7 +220,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: auto;
-    height: 563px;
+    min-height: 563px;
     padding: 50px 40px;
     background-position: center;
     background-repeat: no-repeat;
@@ -271,6 +271,7 @@
 
 .about_column {
     justify-self: center;
+    text-align: justify;
 }
 
 .about_text {
